@@ -174,24 +174,26 @@ SELECT * FROM monthly_premium;
 
 ---
 
-## 🎤 Interview Talking Points
+## 🔥 Screenshots of results
+## 📸 Sample Outputs
 
-> "Designed a SQL-based ETL pipeline with automated data validation and audit logging."
+### Raw Data (Staging Tabele)
+![Staging](screenshots/staging_data.png)
 
-> "Handled real-world data issues such as invalid formats, duplicates, and extreme values."
+### Clean Data (Master Table)
+![Master](screenshots/master_table.png)
 
-> "Separated clean and invalid data using a structured multi-layer architecture."
+### Error Logs (Invalid Records)
+![Errors](screenshots/error_data.png)
 
-> "Implemented reporting views to generate business insights from processed data."
+### Monthly Premium Trend (View)
+![Staging](screenshots/monthly_trend_View.png)
 
----
+### Premium Summary by Policy Category (View)
+![Master](screenshots/premium_summary_View.png)
 
-## 🔥 Future Improvements
-
-- [ ] Add indexing for query optimization
-- [ ] Integrate with Python for automation
-- [ ] Build dashboard (Power BI / Tableau)
-- [ ] Add incremental loading (instead of full refresh)
+### ETL Result Summary (Record Counts)
+![Errors](screenshots/count_results.png)
 
 ---
 
