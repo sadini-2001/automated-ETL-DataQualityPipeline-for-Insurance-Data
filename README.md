@@ -48,7 +48,7 @@ Reporting Layer (SQL Views)
 | Component    | Details                                                         |
 | ------------ | --------------------------------------------------------------- |
 | **Database** | MySQL                                                           |
-| **Tools**    | phpMyAdmin /                                                    |
+| **Tools**    | phpMyAdmin                                                      |
 | **Concepts** | ETL Pipelines, Data Validation, Data Cleaning, SQL Optimization |
 
 ---
