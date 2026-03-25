@@ -152,6 +152,8 @@ SELECT * FROM monthly_premium;
 ```
 
 ---
+### step 6:⚡ Query Optimization
+- Implemented indexing on key columns (`policy_category`, `start_date`) to improve query performance for reporting operations.
 
 ## 🧠 Key Learnings
 
