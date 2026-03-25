@@ -10,14 +10,16 @@ CREATE TABLE staging_insurance_data (
     policy_start_date VARCHAR(50)
 );
 
--- Master Table
+-- Master Table (with UNIQUE constraint built-in)
 CREATE TABLE master_policies (
     policy_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_name VARCHAR(100),
     policy_category VARCHAR(50),
     premium_decimal DECIMAL(10,2),
     start_date DATE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    UNIQUE (customer_name, start_date, premium_decimal)
 );
 
 -- Error Log Table
@@ -27,7 +29,3 @@ CREATE TABLE data_error_logs (
     issue_description VARCHAR(255),
     logged_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
--- Prevent duplicate records
-ALTER TABLE master_policies 
-ADD UNIQUE unique_policy (customer_name, start_date, premium_decimal);
