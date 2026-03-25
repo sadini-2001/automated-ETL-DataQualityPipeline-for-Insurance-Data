@@ -27,3 +27,7 @@ CREATE TABLE data_error_logs (
     issue_description VARCHAR(255),
     logged_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Prevent duplicate records
+ALTER TABLE master_policies 
+ADD UNIQUE unique_policy (customer_name, start_date, premium_decimal);
