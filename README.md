@@ -88,6 +88,7 @@ The dataset includes:
 * Regex validation for numeric and date formats
 * Range checks for premium values
 * Null and empty value handling
+* Logical validation to prevent future dates using `CURDATE()`
 
 ### 🔹 3. Safe Data Loading
 
